@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Knights Kingdom Cattery</title>
+  </head>
+  <body>
+    
+    <header class="top-section">
+      <div class="menu-button" onclick=showSidebar()><a href="#"><img class="menu-icon" src="graphics/menuIcon.png"></a></div>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="graphics/logo.png">
+        </a>
+      </div>
+      <h1 class="header">British - Scottish Kittens</h1>
+      <div class="paragraph-container">
+        <p class="paragraph1">Cats love	&#10084;, DNA tests clear 🧬, TICA registered 🐾</p>
+      </div>
+      <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><img class="close-icon" src="graphics/closeIcon.png"></a></li>
+          <li><a class="menu-mobile" href="index.html">Home</a></li>
+          <li><a class="menu-mobile" href="about.html">About</a></li>
+          <li><a class="menu-mobile" href="kittens.html">Kittens</a></li>
+          <li><a class="menu-mobile" href="available.html">Available</a></li>
+          <li><a class="menu-mobile" href="contact.html">Contact</a></li>
+          
+        </ul>
+        <ul class="menu-container">
+          <li><a class="menu-item hideOnMobile" href="index.html">Home</a></li>
+          <li><a class="menu-item hideOnMobile" href="about.html">About</a></li>
+          <li><a class="menu-item hideOnMobile" href="kittens.html">Kittens</a></li>
+          <li><a class="menu-item hideOnMobile" href="available.html">Available</a></li>
+          <li><a class="menu-item hideOnMobile" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-contact">
+        <div class="container">
+          <h1 class="contact-header">Contact Us!</h1>
+          <div>
+            <img class="contact-image" src="images/kittens/kitten4.JPG" alt="kitten4">
+          </div>
+          <p>
+            To enquire for a kitten please provide us with some information about yourselves. Tell us where you are from and the home you would provide one of our kittens. Please also specify what gender and eye color you are looking for.
+          </p>
+          <form action="https://formsubmit.co/nick_horne123@hotmail.co.uk" method="POST">
+            <div class="form-group">
+              <label for="firstname">First Name*</label>
+              <input 
+                type="text" 
+                name="firstname" 
+                id="firstname" 
+                required 
+                class="form-element"
+                placeholder="First Name"/>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name*</label>
+              <input 
+                type="text" 
+                name="lastname" 
+                id="lastname" 
+                required 
+                class="form-element"
+                placeholder="Last Name"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address*</label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="form-element"
+                placeholder="Email address"/>
+            </div>
+            
+            <div class="form-group full">
+              <label for="message">Tell us about yourself and what you're looking for?*</label>
+              <textarea name="message" id="message" class="form-element" placeholder="I would like a cute kitten please..."></textarea>
+            </div>
+            <div class="submit-group">
+              <input type="submit" value="SEND MESSAGE"/>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>

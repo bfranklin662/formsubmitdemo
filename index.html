@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <title>Knights Kingdom Cattery</title>
+  </head>
+  <body>
+    
+    <header class="top-section">
+      <div class="menu-button" onclick=showSidebar()><a href="#"><img class="menu-icon" src="graphics/menuIcon.png"></a></div>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="graphics/logo.png">
+        </a>
+      </div>
+      <h1 class="header">British - Scottish Kittens</h1>
+      <div class="paragraph-container">
+        <p class="paragraph1">Cats love	&#10084;, DNA tests clear 🧬, TICA registered 🐾</p>
+      </div>
+      <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><img class="close-icon" src="graphics/closeIcon.png"></a></li>
+          <li><a class="menu-mobile" href="index.html">Home</a></li>
+          <li><a class="menu-mobile" href="about.html">About</a></li>
+          <li><a class="menu-mobile" href="kittens.html">Kittens</a></li>
+          <li><a class="menu-mobile" href="available.html">Available</a></li>
+          <li><a class="menu-mobile" href="contact.html">Contact</a></li>
+          
+        </ul>
+        <ul class="menu-container">
+          <li><a class="menu-item hideOnMobile" href="index.html">Home</a></li>
+          <li><a class="menu-item hideOnMobile" href="about.html">About</a></li>
+          <li><a class="menu-item hideOnMobile" href="kittens.html">Kittens</a></li>
+          <li><a class="menu-item hideOnMobile" href="available.html">Available</a></li>
+          <li><a class="menu-item hideOnMobile" href="contact.html">Contact</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <div class="gallery-container">
+      <div class="gallery">
+        <img class="images cat0" src="images/zeusJunior.JPG" alt="cat0">        
+        <img class="images cat1" src="images/cat1.JPG" alt="cat1">
+        <img class="images kitten6" src="images/kittens/kitten6.JPG" alt="kitten6">
+        <img class="images cat2" src="images/cat2.JPG" alt="cat2">
+        <img class="images cat3" src="images/cat3.JPG" alt="cat3">
+        <img class="images cat4" src="images/cat4.JPG" alt="cat4">
+        <img class="images kitten5" src="images/kittens/kitten5.JPG" alt="kitten5">
+        <img class="images cat6" src="images/davinciMale.JPG" alt="cat6">
+        <img class="images cat7" src="images/jane.JPG" alt="cat7">
+        <img class="images cat8" src="images/leviMale.JPG" alt="cat8">
+        <img class="images kitten4" src="images/kittens/kitten4.JPG" alt="kitten4">
+      </div>
+    </div>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>
